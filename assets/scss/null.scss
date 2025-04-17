@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+
+  height: 100%;
+  min-width: $minWidth + px;
+}
+body {
+  background-color: #fff;
+  color: $mainColor;
+  line-height: 157%;
+  font-family: $fontFamily;
+  @include adaptiveValue('font-size', 28, 18);
+
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+  font-family: $fontFamily;
+  font-size: inherit;
+}
+button {
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+  &:disabled {
+    background-color: #c1c1c1 !important;
+    color: #808080;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+a {
+  color: inherit;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
